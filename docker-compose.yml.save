@@ -4,7 +4,7 @@ services:
   online_shop:
     build:
       context: .
-    container_name: "shop-container"
+    conatiner_name: shop-container
     ports:
       - "5173:5173"
     networks:
@@ -14,7 +14,7 @@ services:
 
   nginx:
     image: nginx:latest
-    container_name: "nginx-container"
+    container_name: nginx-container
     ports:
       - "80:80"
     networks:
@@ -25,4 +25,3 @@ services:
 networks:
   shop-network:
     driver: "bridge"
-
